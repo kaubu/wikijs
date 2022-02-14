@@ -8,7 +8,7 @@
 # Port the server should listen to
 # ---------------------------------------------------------------------
 
-port: 3000
+port: process.env.PORT
 
 # ---------------------------------------------------------------------
 # Database
@@ -28,7 +28,7 @@ db:
   port: process.env.DB_PORT
   user: process.env.DB_USERNAME
   pass: process.env.DB_PASSWORD
-  db: wiki
+  db: process.env.DB_DATABASE
   ssl: false
 
   # Optional - PostgreSQL / MySQL / MariaDB only:
